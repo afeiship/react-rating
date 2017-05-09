@@ -1,4 +1,5 @@
 import React,{PureComponent} from 'react';
+
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import noop from 'noop';
@@ -66,7 +67,6 @@ export default class extends PureComponent{
   }
 
   render(){
-    console.log('render....')
     return (
       <div className={classNames('react-rating',this.props.className)}>
         {this.getChildren()}
